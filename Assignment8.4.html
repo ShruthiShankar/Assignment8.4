@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+/*below lines of code will change the link as well as text of the anchor tag upon mouseenter*/
+$(document).ready(function(){
+	$('a').mouseenter(function(){
+		$('a').text("Acadgild - jQuery Tutorial");
+		$('a').attr("href","http://www.google.com");
+	});
+});
+</script>
+<style>
+p {
+	width: 400px;
+	height: 200px;
+	margin: 0 auto;
+}
+a {
+	font-size: 30px;
+}
+</style>
+</head>
+<body>
+<p><a href="www.acadgild.com" id="acadgild" target="_blank">jQuery Tutorial</a></p>
+</body>
+</html>
